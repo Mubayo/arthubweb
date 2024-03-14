@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = https://github.com/Mubayo/arthub_web.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[lfs]
+	repositoryformatversion = 0
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[remote "ope_web"]
+	url = https://github.com/oluwanino/arthubweb.git
+	fetch = +refs/heads/*:refs/remotes/ope_web/*
