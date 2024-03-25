@@ -57,10 +57,10 @@ const Header = ({ onSearch, onClearFilters }) => {
     setShowRegister(false);
   };
   return (
-    // <header>
-      <Navbar bg="dark" variant="dark" expand="lg" style={{color:"black"}}>
+    <div>
+      <Navbar bg="danger" variant="danger" expand="lg" style={{color:"black"}}>
         <Container>
-          <Navbar.Brand href="/" className='brand'>Routing Diasporic Histories</Navbar.Brand>
+          <Navbar.Brand href="/" className='brand mr-2' style={{fontSize:"30px", color:"white"}}>Routing Diasporic Histories</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="justify-content-between">
             {/* Navigation links */}
@@ -72,17 +72,18 @@ const Header = ({ onSearch, onClearFilters }) => {
               <Nav.Link className='menu-item' href="/about">About RDH</Nav.Link>
               <Nav.Link className='menu-item' href="/contact">Contact</Nav.Link>
               <Nav.Link className='menu-item' href="/articles">Latest News</Nav.Link>
-              <Nav.Link className='menu-item' href="/search">Search</Nav.Link>
+              <Nav.Link className='menu-item' href='https://dh.southspace.xyz/wp-login.php'>Login</Nav.Link>
+              <Nav.Link className='menu-item' href='https://dh.southspace.xyz/wp-login.php?action=register'>Register</Nav.Link>
               {/* Add other navigation links */}
             </Nav>
 
             {/* Social media icons */}
-            <Nav>
+            {/* <Nav> */}
               {/* <Nav.Link href="#" className="social-icon"><FontAwesomeIcon icon={faTwitter} /></Nav.Link>
               <Nav.Link href="#" className="social-icon"><FontAwesomeIcon icon={faFacebook} /></Nav.Link>
               <Nav.Link href="#" className="social-icon"><FontAwesomeIcon icon={faInstagram} /></Nav.Link> */}
               {/* Add more social media icons as needed */}
-            </Nav>
+            {/* </Nav> */}
             {/* <Form className='inline'>
             <FormControl
               type="text"
@@ -98,16 +99,16 @@ const Header = ({ onSearch, onClearFilters }) => {
           </Form> */}
 
           {/* Login and Register buttons */}
-          <Nav>
-              <Nav.Link className='menu-item mx-auto' variant="outline-primary" href='/login'>Login</Nav.Link>
-              <Button className='menu-item' variant="primary" href='/register' onClick={openRegister}>Register</Button>
+          {/* <Nav> */}
+              {/* <Nav.Link className='menu-item' href='https://dh.southspace.xyz/wp-login.php'>Login</Nav.Link>
+              <Nav.Link className='menu-item' href='https://dh.southspace.xyz/wp-login.php?action=register'>Register</Nav.Link> */}
               {/* <Button variant="outline-primary" onClick={openLogin} className='mx-auto'>Login</Button>
               <Button variant="primary" onClick={openRegister}>Register</Button> */}
-            </Nav>
+            {/* </Nav> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    // </header>
+    </div>
   );
 };
 

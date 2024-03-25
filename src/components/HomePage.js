@@ -18,8 +18,12 @@ const HomePage = () => {
   return (
     <div>
       {/* Featured Content/Carousel */}
-      <Carousel>
-        <Carousel.Item>
+      {/* <Carousel> */}
+      <div style={{position: "relative"}}>
+      <div style={{    position: "relative",
+    width: "100%",
+    overflow: "hidden"}}>
+        {/* <Carousel.Item> */}
           <img
           style={{height:"450px", objectFit:"cover"}}
             className="d-block w-100"
@@ -29,8 +33,8 @@ const HomePage = () => {
           <Overlay ></Overlay>
           <div className="overlay"></div>
           <Carousel.Caption style={{bottom:"7.25rem"}}>
-            <h3>Welcome to our Routing Diasporic Histories!</h3>
-            <p>Description for the first announcement.</p>
+            <h3 style={{fontSize:"40px", fontWeight:"bold"}} >Welcome to our Routing Diasporic Histories!</h3>
+            <p style={{color:"white"}} >Description for the first announcement.</p>
             <Form className="mb-4 w-100" style={{flexDirection:"row", justifyContent:"center"}}>
             <Form.Group controlId="searchForm" style={{marginRight:5, width:"70%"}}>
               <Form.Control
@@ -39,40 +43,19 @@ const HomePage = () => {
                 value={searchQuery}
                 // onChange={(e) => setSearchQuery(e.target.value)}
               />
-              
+
             </Form.Group>
-            <Button href='/search' variant="primary" 
+            <Button href='/search' variant="danger" 
             // onClick={() => navigation.location("/search") }
             >
               Search
             </Button>
           </Form>
           </Carousel.Caption>
-        </Carousel.Item>
-        {/* <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://source.unsplash.com/1200x400/?house"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-          <h3>Welcome to our Routing Diasporic Histories!</h3>
-            <p>Description for the second announcement.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://source.unsplash.com/1200x400/?car"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>Welcome to our Art Hub!</h3>
-            <p>Description for the third announcement.</p>
-          </Carousel.Caption>
-        </Carousel.Item> */}
         {/* Add more Carousel.Items as needed */}
-      </Carousel>
+      </div>
+      </div>
+      {/* </Carousel> */}
 
       {/* Sections for Different Categories/Themes */}
       <Container className="my-5">
