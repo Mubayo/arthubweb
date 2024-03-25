@@ -45,7 +45,7 @@ const HomePage = () => {
               />
 
             </Form.Group>
-            <Button href='/search' variant="danger" 
+            <Button href='/search' style={{color:"white"}} variant="danger" 
             // onClick={() => navigation.location("/search") }
             >
               Search

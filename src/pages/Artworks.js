@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import ArtworkCard from '../components/ArtworkCard';
+import axios from 'axios';
 import '../assets/css/artworks.css';
 
 const Artworks = () => {
   const [artworks, setArtworks] = useState([]);
+  const [artworks2, setArtworks2] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
@@ -56,7 +58,18 @@ const Artworks = () => {
                 "relatedText" : "A short text about the geogrpahy and history can go here",
             },
         ]
-        setArtworks(data);
+        axios.get('https://dh.southspace.xyz/wp-json/wp/v2/artwork?_embed')
+        .then(res => {
+          const artworks23 = res.data;
+          // this.setState({ artworks });
+          setArtworks(artworks23);
+        // setArtworks2(artworks23)
+        /* 
+        For debugging and locating required information in the feed:
+        prints the full feed result to the browser console
+        */
+        console.log(artworks2);
+      })
       } catch (error) {
         console.error('Error fetching artworks:', error);
       }
@@ -66,7 +79,7 @@ const Artworks = () => {
   }, []);
 
   const filteredArtworks = artworks.filter((artwork) =>
-    artwork.title.toLowerCase().includes(searchTerm.toLowerCase())
+    artwork.title.rendered.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (

@@ -71,7 +71,7 @@ const Header = ({ onSearch, onClearFilters }) => {
               <Nav.Link className='menu-item' href="/articles">Articles</Nav.Link>
               <Nav.Link className='menu-item' href="/about">About RDH</Nav.Link>
               <Nav.Link className='menu-item' href="/contact">Contact</Nav.Link>
-              <Nav.Link className='menu-item' href="/articles">Latest News</Nav.Link>
+              <Nav.Link className='menu-item' href="https://dh.southspace.xyz/blog">Latest News</Nav.Link>
               <Nav.Link className='menu-item' href='https://dh.southspace.xyz/wp-login.php'>Login</Nav.Link>
               <Nav.Link className='menu-item' href='https://dh.southspace.xyz/wp-login.php?action=register'>Register</Nav.Link>
               {/* Add other navigation links */}
