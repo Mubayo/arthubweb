@@ -1,5 +1,6 @@
 import React from 'react';
 // import aboutImage from '../assets/images/about-image.jpg';
+import images1 from '../assets/images/about.jpg'
 import '../assets/css/about.css';
 
 const About = () => {
@@ -21,7 +22,7 @@ const About = () => {
         </div>
         <div className="about-image">
           {/* <img src={aboutImage} alt="About Us" /> */}
-          <img src="https://source.unsplash.com/1200x400/?history" alt="About Us" />
+          <img src={images1} alt="About Us" />
         </div>
       </div>
     </div>

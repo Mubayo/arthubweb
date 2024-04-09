@@ -9,8 +9,8 @@ const Footer = () => {
           <Row>
             <Col>
               <h5>Important Pages</h5>
-              <ul>
-                <li><a className='menu-item' href="/">Home</a></li>
+              <ul style={{padding:"0px", color:"grey"}}>
+                <li><a className='menu-item' style={{color:"red !important"}} href="/">Home</a></li>
                 <li><a className='menu-item' href="/artist">Artists</a></li>
                 <li><a className='menu-item' href="/artist">Funders and Supporters</a></li>
                 {/* Add other important pages */}
@@ -19,7 +19,7 @@ const Footer = () => {
             <Col>
               <h5>Contacts</h5>
               {/* Add social media icons or links */}
-              <ul>
+              <ul style={{padding:"0px", color:"grey"}}>
                 <li><a className='menu-item' href="/">+444-987-987-9897</a></li>
                 <li><a className='menu-item' href="/artist">info@rdh.com</a></li>
                 {/* Add other important pages */}

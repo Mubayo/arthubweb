@@ -16,48 +16,7 @@ const Artworks = () => {
         // Simulated data
         // const response = await fetch('/api/artworks');
         // const data = await response.json();
-        const data = [
-            {
-                "id": 1,
-                "imageUrl" : "https://source.unsplash.com/400x200/?kid",
-                "title" : "Artwork 1",
-                "artist" : "Sodiq",
-                "description" : "This is the first artwork",
-                "relatedText" : "A short text about the geogrpahy and history can go here",
-            },
-            {
-                "id": 2,
-                "imageUrl" : "https://source.unsplash.com/400x200/?kid",
-                "title" : "Artwork 2",
-                "artist" : "Sodiq",
-                "description" : "This is the first artwork",
-                "relatedText" : "A short text about the geogrpahy and history can go here",
-            },
-            {
-                "id": 3,
-                "imageUrl" : "https://source.unsplash.com/400x200/?kid",
-                "title" : "Artwork 3",
-                "artist" : "Sodiq",
-                "description" : "This is the first artwork",
-                "relatedText" : "A short text about the geogrpahy and history can go here",
-            },
-            {
-                "id": 4,
-                "imageUrl" : "https://source.unsplash.com/400x200/?kid",
-                "title" : "Artwork 4",
-                "artist" : "Sodiq",
-                "description" : "This is the first artwork",
-                "relatedText" : "A short text about the geogrpahy and history can go here",
-            },
-            {
-                "id": 5,
-                "imageUrl" : "https://source.unsplash.com/400x200/?kid",
-                "title" : "Artwork 5",
-                "artist" : "Sodiq",
-                "description" : "This is the first artwork",
-                "relatedText" : "A short text about the geogrpahy and history can go here",
-            },
-        ]
+        
         axios.get('https://dh.southspace.xyz/wp-json/wp/v2/artwork?_embed')
         .then(res => {
           const artworks23 = res.data;

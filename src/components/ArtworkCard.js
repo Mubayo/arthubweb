@@ -12,7 +12,8 @@ const ArtworkCard = ({ artwork }) => {
 }
   return (
     <div className="artwork-card">
-    <Link to={artwork.link}>
+    <Link to={"/artwork/"+artwork.id}>
+    {/* <Link to={artwork.link}> */}
     
         <div> <img src={artwork._embedded['wp:featuredmedia'][0].source_url} />  </div>
       <div className="artwork-details">

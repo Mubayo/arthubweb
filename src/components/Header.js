@@ -59,19 +59,19 @@ const Header = ({ onSearch, onClearFilters }) => {
   return (
     <div>
       <Navbar bg="danger" variant="danger" expand="lg" style={{color:"black"}}>
-        <Container>
+        <Container className='justify-content-between'>
           <Navbar.Brand href="/" className='brand mr-2' style={{fontSize:"30px", color:"white"}}>Routing Diasporic Histories</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse className="justify-content-between">
+          <Navbar.Collapse className="justify-content-between" style={{flexGrow:0}}>
             {/* Navigation links */}
-            <Nav className="mr-auto menu">
+            <Nav className=" menu">
               {/* <Nav.Link href="/">Home</Nav.Link> */}
               {/* <Nav.Link href="/artist">Profile</Nav.Link> */}
               <Nav.Link className='menu-item' href="/artworks">Artworks</Nav.Link>
               <Nav.Link className='menu-item' href="/articles">Articles</Nav.Link>
               <Nav.Link className='menu-item' href="/about">About RDH</Nav.Link>
               <Nav.Link className='menu-item' href="/contact">Contact</Nav.Link>
-              <Nav.Link className='menu-item' href="https://dh.southspace.xyz/blog">Latest News</Nav.Link>
+              {/* <Nav.Link className='menu-item' href="https://dh.southspace.xyz/blog">Latest News</Nav.Link> */}
               <Nav.Link className='menu-item' href='https://dh.southspace.xyz/wp-login.php'>Login</Nav.Link>
               <Nav.Link className='menu-item' href='https://dh.southspace.xyz/wp-login.php?action=register'>Register</Nav.Link>
               {/* Add other navigation links */}

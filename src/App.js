@@ -51,6 +51,8 @@ const App = () => {
   return (
     <Router>
       <Header/>
+      <div style={{minHeight: window.innerHeight-200,}}>
+
       <Routes>
         <Route path="/" exact element={<HomePage />} />
         <Route path="/artist" element={<ArtistPage/>} />
@@ -63,9 +65,13 @@ const App = () => {
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />
         <Route path="/about" element={<About/>} />
-        <Route path="/article" element={<Article/>} />
+        <Route path="/article/:id" element={<Article/>} />
       </Routes>
-      <Footer />
+      </div>
+
+
+      
+      <Footer style={{}} />
     </Router>
   );
 };

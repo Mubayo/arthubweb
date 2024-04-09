@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import images1 from '../assets/images/contact.jpg'
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +22,11 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="about-container">
+      <div className="about-content">
+        <div className="about-text">
+          <h2>Contact Us</h2>
+          <form onSubmit={handleSubmit}>
       <label>
         Name:
         <input type="text" name="name" value={formData.name} onChange={handleChange} />
@@ -40,6 +45,14 @@ const ContactForm = () => {
       </label>
       <button type="submit">Submit</button>
     </form>
+        </div>
+        <div className="about-image">
+          {/* <img src={aboutImage} alt="About Us" /> */}
+          <img src={images1} alt="About Us" />
+        </div>
+      </div>
+    </div>
+    
   );
 };
 
